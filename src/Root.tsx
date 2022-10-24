@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import './Root.scss'
+import './Root.sass'
 
 function Root() {
   const [list, setList] = useState<number[]>([])
@@ -32,7 +32,7 @@ function Root() {
     setScrollHeight(e.target.scrollTop)
     setStartCount(Math.floor(scrollHeight / 80))
     setEndCount(startCount + visionCount)
-    setVisionList(list.slice(startCount, endCount))
+    setVisionList(list.slice(startCount, endCount + 5))
     setStartOffset(scrollHeight - (scrollHeight % itemHeight))
   }
 
