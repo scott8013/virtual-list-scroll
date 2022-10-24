@@ -1,0 +1,44 @@
+.Root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    box-sizing: border-box;
+    height: 40px;
+    background: aquamarine;
+    line-height: 40px;
+    color: blue;
+    padding: 0 12px;
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+}
+
+.container {
+  background: antiquewhite;
+  height: calc(100vh - 80px);
+  position: relative;
+  overflow-y: auto;
+  width: 500px;
+  .phantom {
+    position: absolute;
+    z-index: -1;
+    width: 500px;
+  }
+  .ul {
+    padding: 0 20px;
+    position: absolute;
+    .li {
+      list-style: none;
+      border-bottom: 1px solid brown;
+      height: 80px;
+      line-height: 80px;
+      width: 500px;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
